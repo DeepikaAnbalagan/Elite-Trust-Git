@@ -54,19 +54,19 @@
                             </div>  
                             <div class="dob col-md-12 col-lg-4 col-xl-4">
                                 <label for="d_o_admission">Date Of Birth</label>
-                                <input id="d_o_admission" class="form-control date" name="d_o_admission" placeholder="Select date...">
+                                <input id="d_o_admission" class="form-control date" name="dob" placeholder="Select date...">
                                  
                              </div>
                             <div class="gender col-lg-4">
                                 <label for="gender">Gender</label>
                                 <div class="row">
                                 <div class="custom-control custom-radio" id="gender">
-                                    <input type="radio" class="custom-control-input" id="stu_customRadio1" name="radio1" value="Male">
+                                    <input type="radio" class="custom-control-input" id="stu_customRadio1" name="gender" value="Male">
                                     <label class="custom-control-label" for="stu_customRadio1">Male</label>
                                 </div>
                     
                                 <div class="custom-control custom-radio female" id="gender">
-                                    <input type="radio" class="custom-control-input" id="stu_customRadio2" name="radio1" value="Female">
+                                    <input type="radio" class="custom-control-input" id="stu_customRadio2" name="gender" value="Female">
                                     <label class="custom-control-label" for="stu_customRadio2">Female</label>
                                 </div>
                                 </div>
@@ -93,7 +93,7 @@
                         <div class="col-lg-4">
                             <div class="address">
                                 <label for="address">Address/Correspondance</label>
-                                <textarea class="form-control input-sm" id="address" rows="4"></textarea>
+                                <textarea class="form-control input-sm" id="address" name="address" rows="4"></textarea>
                             </div>  
                         </div>                         
                          <div class="col-lg-8">
@@ -102,16 +102,16 @@
                                     <label for="email">Email</label>
                                     <input id="email" type="text" class="form-control input-sm" name="email">
                                 </div> 
-
+                                <div class="City col-lg-6">
+                                    <label for="City">City</label>
+                                    <input id="City" type="text" class="form-control input-sm" name="city">
+                                </div>
                                 <div class="district col-lg-6">
                                     <label for="district">District</label>
                                     <input id="district" type="text" class="form-control input-sm" name="district">
                                 </div>  
                                 
-                                <div class="place col-lg-6">
-                                    <label for="place">Place</label>
-                                    <input id="place" type="text" class="form-control input-sm" name="place">
-                                </div>  
+                               
                                 
                                 <div class="state col-lg-6">
                                     <label for="state">State</label>
@@ -136,39 +136,39 @@
                           
                                     <div class="h_admitted col-lg-4">
                                         <label for="h_admitted">Name of School/ College</label>
-                                        <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                        <input id="h_admitted" type="text" class="form-control input-sm" name="n_school_college">
                                     </div> 
                                     <div class="h_admitted col-lg-4">
                                         <label for="h_admitted">Enrollment/Register Number</label>
-                                        <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                        <input id="h_admitted" type="text" class="form-control input-sm" name="reg_no">
                                     </div>  
                              
                                     <div class="h_admitted col-lg-4">
                                         <label for="h_admitted">Class/Department</label>
-                                        <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                        <input id="h_admitted" type="text" class="form-control input-sm" name="class_dept">
                                     </div>  
                                     <div class="h_admitted col-lg-4">
                                         <label for="h_admitted">School/College Address</label>
-                                        <textarea class="form-control input-sm" id="address" rows="5"></textarea>
+                                        <textarea class="form-control input-sm" id="s_c_address" rows="5"></textarea>
                                     </div> 
                                   
                              <div class="col-lg-8">
                                  <div class="row">
                                     <div class="h_admitted col-lg-6">
                                         <label for="h_admitted">Marks/Percentage</label>
-                                        <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                        <input id="h_admitted" type="text" class="form-control input-sm" name="mark_percent">
                                     </div> 
                                     <div class="form-group col-lg-6">
                                         <label for="exampleFormControlFile1">Pervious Marksheet</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        <input type="file" class="form-control-file" name="previous_marksheet" id="exampleFormControlFile1">
                                     </div>
                                     <div class="h_admitted col-lg-6">
                                         <label for="h_admitted">Term/Semester</label>
-                                        <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                        <input id="h_admitted" type="text" class="form-control input-sm" name="term_semester">
                                     </div> 
                                     <div class="h_admitted col-lg-6">
                                         <label for="h_admitted">Acadamic Year</label>
-                                        <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                        <input id="h_admitted" type="text" class="form-control input-sm" name="acadamic_year">
                                     </div> 
                                   
                                 
@@ -179,7 +179,7 @@
                              </div>
                              <div class="t_o_disease col-lg-4">
                                 <label for="t_o_disease">Scholarship category</label>
-                                <select class="custom-select" id="t_o_disease" name="select">
+                                <select class="custom-select" id="t_o_disease" name="scholarship_select">
                                     <option value="expert">Scholarship...</option>
                                     <option value="1">Premetric</option>
                                     <option value="2">Post metric</option>
@@ -187,13 +187,13 @@
                             </div> 
                              <div class="h_admitted col-lg-4">
                                 <label for="h_admitted"> Phone Number</label>
-                                <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                <input id="h_admitted" type="text" class="form-control input-sm" name="s_phone_no">
                             </div>
                         
                          
                             <div class="h_admitted col-lg-4">
                                 <label for="h_admitted">  Email</label>
-                                <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                <input id="h_admitted" type="text" class="form-control input-sm" name="s_email">
                              </div>
                         </div>
 
@@ -206,11 +206,11 @@
                              
                                 <div class="a_number col-lg-4">
                                     <label for="a_number">Account Number</label>
-                                    <input id="a_number" type="number" class="form-control" name="a_number">
+                                    <input id="a_number" type="number" class="form-control" name="acc_no">
                                 </div>
                                 <div class="n_o_bank col-lg-4">
                                     <label for="n_o_bank">Name Of Bank</label>
-                                    <input id="n_o_bank" type="text" class="form-control" name="n_o_bank">
+                                    <input id="n_o_bank" type="text" class="form-control" name="bank_name">
                                 </div>   
                                 <div class="ifsc_code col-lg-4">
                                     <label for="ifsc_code">IFSC Code</label>
@@ -221,11 +221,11 @@
                             <div class="row">
                                 <div class="aa_number col-lg-4">
                                     <label for="aa_number">Aadhar Number</label>
-                                    <input id="aa_number" type="number" class="form-control" name="aa_number">
+                                    <input id="aa_number" type="number" class="form-control" name="aadhar_number">
                                 </div>  
                                  <div class="form-group col-lg-4">
                                     <label for="exampleFormControlFile1">Attachement</label>
-                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    <input type="file" class="form-control-file" name="attachement" id="exampleFormControlFile1">
                                   </div>
                             
                             </div>
@@ -245,11 +245,11 @@
                         <div class="row">
                             <div class="h_admitted col-lg-4">
                                 <label for="h_admitted">Name Of Hospital Admitted</label>
-                                <input id="h_admitted" type="text" class="form-control input-sm" name="h_admitted">
+                                <input id="h_admitted" type="text" class="form-control input-sm" name="hosiptal_name">
                             </div>  
                             <div class="t_o_disease col-lg-4">
                                 <label for="t_o_disease">Type Of Disease</label>
-                                <select class="custom-select" id="t_o_disease" name="select">
+                                <select class="custom-select" id="t_o_disease" name="disease_select">
                                     <option value="expert">Affected by...</option>
                                     <option value="1">Injury</option>
                                     <option value="2">Maternity</option>
@@ -258,11 +258,11 @@
                             </div> 
                             <div class="n_o_disease col-lg-4">
                                 <label for="n_o_disease">Name Of Disease</label>
-                                <input id="n_o_disease" type="text" class="form-control input-sm" name="n_o_disease">
+                                <input id="n_o_disease" type="text" class="form-control input-sm" name="disease_name">
                             </div>  
                           <div class="t_o_disease col-lg-4">
                                 <label for="t_o_disease">Severity Of Disease</label>
-                                <select class="custom-select" id="t_o_disease" name="select">
+                                <select class="custom-select" id="t_o_disease" name="severity_disease">
                                     <option value="expert">Please select ...</option>
                                     <option value="1">Minor</option>
                                     <option value="2">Moderate</option>
@@ -273,23 +273,23 @@
                  
                             <div class="d_o_admission col-lg-4">
                                 <label for="d_o_admission">Date Of Admission</label>
-                                <input id="d_o_admission" class="form-control date" name="d_o_admission" placeholder="Click me...">
+                                <input id="d_o_admission" class="form-control date" name="admission_date" placeholder="Click me...">
                             </div>  
                             <div class="a_expense col-lg-4">
                                 <label for="a_expense">Approximate Expenses</label>
-                                <input id="a_expense" type="text" class="form-control" name="a_expense">
+                                <input id="a_expense" type="text" class="form-control" name="approx_expense">
                             </div>  
                             <div class="r_amount col-lg-4">
                                 <label for="r_amount">Requested Amount</label>
-                                <input id="r_amount" type="text" class="form-control" name="r_amount">
+                                <input id="r_amount" type="text" class="form-control" name="req_amount">
                             </div> 
                             <div class="form-group col-lg-4">
                                 <label for="exampleFormControlFile1"> Hospital Report/Recommendation letter </label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                <input type="file" class="form-control-file" name="hospital_report" id="exampleFormControlFile1">
                             </div> 
                             <div class="form-group col-lg-4">
                                 <label for="exampleFormControlFile1">Pervious Medical Report</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                <input type="file" class="form-control-file" name="prev_medical_report" id="exampleFormControlFile1">
                             </div> 
                         </div>
                          <div class="orphan col-lg-12">
@@ -435,7 +435,7 @@
                         </div>
                         </div>
                         <div class="submit">
-                           <button type="submit" class="btn btn-primary">submit</button>
+                           <button type="submit" name="submit"  class="btn btn-primary">submit</button>
                         </div>
                     </div>
                 </div>
