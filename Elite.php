@@ -435,7 +435,7 @@
                         </div>
                         </div>
                         <div class="submit">
-                           <button type="submit" name="submit"  class="btn btn-primary">submit2</button>
+                           <button type="submit" name="submit"  class="btn btn-primary">submited</button>
                         </div>
                     </div>
                 </div>
